@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customer.searchRestaurantController">
+   <children>
+      <MenuButton layoutX="29.0" layoutY="80.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="98.0" text="Select One">
+        <items>
+          <MenuItem fx:id="searchRestaurantByName" mnemonicParsing="false" onAction="#searchRestaurantByName" text="By Name" />
+          <MenuItem fx:id="searchRestaurantByScore" mnemonicParsing="false" onAction="#searchScoreByScore" text="By Score" />
+            <MenuItem fx:id="searchRestaurantByCategory" mnemonicParsing="false" onAction="#searchRestaurantByCategory" text="By Category" />
+            <MenuItem fx:id="searchRestaurantByPrice" mnemonicParsing="false" onAction="#searchRestaurantByPrice" text="By Price" />
+            <MenuItem fx:id="searchRestaurantByZipCode" mnemonicParsing="false" onAction="#searchRestaurantByZipCode" text="By Zip Code" />
+            <MenuItem fx:id="differentCategoryWiseList" mnemonicParsing="false" onAction="#differentCategoryWiseList" text="Category Wise List" />
+        </items>
+      </MenuButton>
+      <Label layoutX="29.0" layoutY="36.0" text="Restaurant Searching Options">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="giveinput1" layoutX="274.0" layoutY="85.0" opacity="0.0" prefHeight="26.0" prefWidth="109.0" />
+      <Label fx:id="giveInput2" layoutX="274.0" layoutY="129.0" opacity="0.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="giveinputbox1" layoutX="407.0" layoutY="85.0" opacity="0.0" />
+      <TextField fx:id="giveinputbox2" layoutX="408.0" layoutY="125.0" opacity="0.0" />
+      <Button fx:id="search" layoutX="595.0" layoutY="85.0" mnemonicParsing="false" onAction="#search" opacity="0.0" text="Search" />
+      <TableView fx:id="tableView" layoutX="31.0" layoutY="227.0" opacity="0.0" prefHeight="223.0" prefWidth="641.0">
+        <columns>
+          <TableColumn fx:id="resIdCol" prefWidth="85.59997367858887" text="Restaurant Id" />
+          <TableColumn fx:id="resNameCol" prefWidth="116.00000762939453" text="Restaurant Name" />
+            <TableColumn fx:id="resScoreCol" prefWidth="73.5999755859375" text="Score" />
+            <TableColumn fx:id="resPriceCol" prefWidth="73.5999755859375" text="Price" />
+            <TableColumn fx:id="resZipcodeCol" prefWidth="84.79998779296875" text="Zip Code" />
+            <TableColumn fx:id="resCategoryCol" prefWidth="209.59994506835938" text="Categories" />
+        </columns>
+      </TableView>
+      <Button fx:id="back" layoutX="595.0" layoutY="125.0" mnemonicParsing="false" onAction="#back" opacity="0.0" prefHeight="26.0" prefWidth="52.0" text="Back" />
+      <TextArea fx:id="textArea" layoutX="28.0" layoutY="218.0" opacity="0.0" prefHeight="223.0" prefWidth="526.0" />
+   </children>
+</AnchorPane>

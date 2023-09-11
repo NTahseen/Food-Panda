@@ -1,0 +1,47 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "vmArgs": " --module-path E:\\javafx-sdk-20.0.2\\lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "Server",
+            "request": "launch",
+            "mainClass": "Network.Server",
+            "projectName": "networking_eba2c07e",
+            "vmArgs": " --module-path E:\\javafx-sdk-20.0.2\\lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "RestaurantApp.Main",
+            "projectName": "networking_eba2c07e",
+            "vmArgs": " --module-path E:\\javafx-sdk-20.0.2\\lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "RestaurantApp",
+            "request": "launch",
+            "mainClass": "RestaurantApp.RestaurantApp",
+            "projectName": "networking_eba2c07e",
+            "vmArgs": " --module-path E:\\javafx-sdk-20.0.2\\lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "customer.Main",
+            "projectName": "networking_eba2c07e",
+            "vmArgs": " --module-path E:\\javafx-sdk-20.0.2\\lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        }
+    ]
+}

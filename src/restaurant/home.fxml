@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurant.HomeController">
+   <children>
+      <Button fx:id="details" layoutX="75.0" layoutY="94.0" mnemonicParsing="false" onAction="#details" prefHeight="57.0" prefWidth="184.0" text="Restaurant Details" />
+      <Button fx:id="Menu" layoutX="75.0" layoutY="171.0" mnemonicParsing="false" onAction="#showMenu" prefHeight="57.0" prefWidth="184.0" text="Food Items" />
+      <TextArea fx:id="area" editable="false" layoutX="292.0" layoutY="50.0" opacity="0.0" prefHeight="274.0" prefWidth="279.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="addFood" layoutX="75.0" layoutY="250.0" mnemonicParsing="false" onAction="#addFood" prefHeight="57.0" prefWidth="184.0" text="Add Food Item" />
+      <Button fx:id="logOut" layoutX="502.0" layoutY="347.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="28.0" prefWidth="66.0" text="Log Out" />
+      <TextArea fx:id="area" layoutX="300.0" layoutY="94.0" prefHeight="213.0" prefWidth="218.0" />
+   </children>
+</AnchorPane>

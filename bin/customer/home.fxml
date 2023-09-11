@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customer.HomeController">
+   <children>
+      <Label fx:id="message" layoutX="96.0" layoutY="43.0" prefHeight="39.0" prefWidth="215.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="button" layoutX="600.0" layoutY="439.0" mnemonicParsing="false" onAction="#logoutAction" text="Logout" />
+      <Button fx:id="searchRestaurant" layoutX="33.0" layoutY="43.0" mnemonicParsing="false" onAction="#searchRestaurant" prefHeight="34.0" prefWidth="142.0" text="Search Restaurant" />
+      <Button fx:id="searchFood" layoutX="33.0" layoutY="96.0" mnemonicParsing="false" onAction="#searchFood" prefHeight="34.0" prefWidth="142.0" text="Search Food" />
+   </children>
+</AnchorPane>
